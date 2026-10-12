@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Links Instore</title>
 
   <style>
@@ -25,27 +26,27 @@
 
 <body>
 
-<img id="slide" src="Links-home-RGB.png">
+  <img id="slide" src="links1.jpg">
 
-<script>
-  const images = [
-    "Links-home-RGB.png",
-    "Links-logo-crni-RGB.png",
-    "Links-logo-igracke-RGB.png",
-    "Links-logo-plavi-RGB.png"
-  ];
+  <script>
+    const images = [
+      "links1.jpg",
+      "links2.jpg",
+      "links3.jpg"
+    ];
 
-  let current = 0;
+    let current = 0;
 
-  setInterval(() => {
-    current = (current + 1) % images.length;
-    document.getElementById("slide").src = images[current] + "?v=" + Date.now();
-  }, 10000);
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      document.getElementById("slide").src =
+        images[current] + "?v=" + Date.now();
+    }, 10000);
 
-  setTimeout(() => {
-    location.reload();
-  }, 300000);
-</script>
+    setTimeout(() => {
+      location.reload();
+    }, 300000);
+  </script>
 
 </body>
 </html>
